@@ -10,7 +10,7 @@ public class martelo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GameObject.Find("Cylinder").GetComponent<Rigidbody>();
+        
         centerMass = GetComponent<Transform>();
     }
 

@@ -39,10 +39,17 @@ public class canhão : MonoBehaviour
         {
 
             
-            rb[1].AddForce(impulso);
+            rb[2].AddForce(impulso);
             Debug.Log("entrou");
         }
         if (other.gameObject.name == "Bola1")
+        {
+
+
+            rb[1].AddForce(impulso);
+            Debug.Log("entrou");
+        }
+        if (other.gameObject.name == "Bola2")
         {
 
 

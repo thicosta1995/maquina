@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class martelo : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] public Rigidbody rb;
     private Transform centerMass;
     public Vector3 torque;
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
+        
         centerMass = GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
-
+       
         rb.AddTorque(torque, ForceMode.Acceleration);
     }
 }

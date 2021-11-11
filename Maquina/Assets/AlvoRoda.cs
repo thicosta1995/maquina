@@ -22,7 +22,8 @@ public class AlvoRoda : MonoBehaviour
     {
         if(roda == true)
         {
-            rb.AddTorque(torque, ForceMode.Acceleration);
+            rb.useGravity = true;
+            rb.angularVelocity =torque;
        
         }
     }
